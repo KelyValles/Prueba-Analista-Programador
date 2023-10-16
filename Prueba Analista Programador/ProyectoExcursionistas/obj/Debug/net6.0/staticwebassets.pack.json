@@ -9,8 +9,52 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\kely_\\Projects\\Prueba Analista Programador\\ProyectoExcursionistas\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
       "Id": "C:\\Users\\kely_\\Projects\\Prueba Analista Programador\\ProyectoExcursionistas\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\kely_\\Projects\\Prueba Analista Programador\\ProyectoExcursionistas\\wwwroot\\img\\Asegurador.jpg",
+      "PackagePath": "staticwebassets\\img\\Asegurador.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kely_\\Projects\\Prueba Analista Programador\\ProyectoExcursionistas\\wwwroot\\img\\Cabo_de_anclaje.jpg",
+      "PackagePath": "staticwebassets\\img\\Cabo_de_anclaje.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kely_\\Projects\\Prueba Analista Programador\\ProyectoExcursionistas\\wwwroot\\img\\Cintas_expres.jpg",
+      "PackagePath": "staticwebassets\\img\\Cintas_expres.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kely_\\Projects\\Prueba Analista Programador\\ProyectoExcursionistas\\wwwroot\\img\\Magnesio.jpg",
+      "PackagePath": "staticwebassets\\img\\Magnesio.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kely_\\Projects\\Prueba Analista Programador\\ProyectoExcursionistas\\wwwroot\\img\\Mosquetones.jpg",
+      "PackagePath": "staticwebassets\\img\\Mosquetones.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kely_\\Projects\\Prueba Analista Programador\\ProyectoExcursionistas\\wwwroot\\img\\Pies_de_gato.jpg",
+      "PackagePath": "staticwebassets\\img\\Pies_de_gato.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kely_\\Projects\\Prueba Analista Programador\\ProyectoExcursionistas\\wwwroot\\img\\arnes.jpg",
+      "PackagePath": "staticwebassets\\img\\arnes.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kely_\\Projects\\Prueba Analista Programador\\ProyectoExcursionistas\\wwwroot\\img\\casco.jpg",
+      "PackagePath": "staticwebassets\\img\\casco.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kely_\\Projects\\Prueba Analista Programador\\ProyectoExcursionistas\\wwwroot\\img\\cuerda.jpg",
+      "PackagePath": "staticwebassets\\img\\cuerda.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kely_\\Projects\\Prueba Analista Programador\\ProyectoExcursionistas\\wwwroot\\img\\guantes.jpg",
+      "PackagePath": "staticwebassets\\img\\guantes.jpg"
     },
     {
       "Id": "C:\\Users\\kely_\\Projects\\Prueba Analista Programador\\ProyectoExcursionistas\\wwwroot\\img\\material_de_escalada.jpg",

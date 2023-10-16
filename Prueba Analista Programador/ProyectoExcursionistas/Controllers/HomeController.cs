@@ -6,17 +6,9 @@ namespace ProyectoExcursionistas.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
         
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
         public IActionResult Index()
         {
-            
             return View();
         }
 
@@ -25,9 +17,12 @@ namespace ProyectoExcursionistas.Controllers
         {
             List<Elemento> conjuntoOptimo = EncontrarConjuntoOptimo(minCalorias, maxPeso);
 
-            var model = new Tuple<int, int, List<Elemento>>(minCalorias, maxPeso, conjuntoOptimo);
+            if (conjuntoOptimo.Count == 0)
+            {
+                ViewBag.ErrorMessage = "No se encontraron elementos óptimos.";
+            }
 
-            return View(model);
+            return View(new Tuple<int, int, List<Elemento>>(minCalorias, maxPeso, conjuntoOptimo));
         }
 
         public IActionResult Privacy()
@@ -45,16 +40,16 @@ namespace ProyectoExcursionistas.Controllers
 
         private List<Elemento> elementos = new()
         {
-            new Elemento { Nombre = "Pies de gato", Peso = 2, Calorias = 3 },
-            new Elemento { Nombre = "Cuerda", Peso = 5, Calorias = 7 },
-            new Elemento { Nombre = "Arnes", Peso = 10, Calorias = 5 },
-            new Elemento { Nombre = "Asegurador", Peso = 3, Calorias = 5 },
-            new Elemento { Nombre = "Cintas exprés", Peso = 4, Calorias = 3 },
-            new Elemento { Nombre = "Mosquetones", Peso = 2, Calorias = 2 },
-            new Elemento { Nombre = "Casco", Peso = 14, Calorias = 12 },
-            new Elemento { Nombre = "Cabo de anclaje", Peso = 3, Calorias = 6 },
-            new Elemento { Nombre = "Magnesio", Peso = 9, Calorias = 8 },
-            new Elemento { Nombre = "Guantes", Peso = 7, Calorias = 9 }
+            new Elemento { Nombre = "Pies de gato", Peso = 2, Calorias = 3, RutaImagen = "/img/Pies_de_gato.jpg"},
+            new Elemento { Nombre = "Cuerda", Peso = 5, Calorias = 7, RutaImagen = "/img/cuerda.jpg" },
+            new Elemento { Nombre = "Arnes", Peso = 10, Calorias = 5, RutaImagen = "/img/arnes.jpg" },
+            new Elemento { Nombre = "Asegurador", Peso = 3, Calorias = 5, RutaImagen = "/img/Asegurador.jpg" },
+            new Elemento { Nombre = "Cintas exprés", Peso = 4, Calorias = 3, RutaImagen = "/img/Cintas_expres.jpg" },
+            new Elemento { Nombre = "Mosquetones", Peso = 2, Calorias = 2, RutaImagen = "/img/Mosquetones.jpg" },
+            new Elemento { Nombre = "Casco", Peso = 14, Calorias = 12, RutaImagen = "/img/casco.jpg" },
+            new Elemento { Nombre = "Cabo de anclaje", Peso = 3, Calorias = 6, RutaImagen = "/img/Cabo_de_anclaje.jpg" },
+            new Elemento { Nombre = "Magnesio", Peso = 9, Calorias = 8, RutaImagen = "/img/Magnesio.jpg" },
+            new Elemento { Nombre = "Guantes", Peso = 7, Calorias = 9, RutaImagen = "/img/guantes.jpg" }
         };
 
 
@@ -87,7 +82,7 @@ namespace ProyectoExcursionistas.Controllers
                 return new List<Elemento>();
             }
 
-            List<Elemento> conjuntoOptimo = new List<Elemento>();
+            List<Elemento> conjuntoOptimo = new();
             int pesoRestante = maxPeso;
             for (int i = elementosDisponibles; i > 0 && pesoRestante > 0; i--)
             {

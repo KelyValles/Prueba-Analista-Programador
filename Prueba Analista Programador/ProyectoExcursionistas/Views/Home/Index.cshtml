@@ -2,22 +2,25 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Determinar los elementos que pueden usarse para escalar un risco basado en las propiedades calóricas y peso de cada elemento.</p>
-</div>
+
 
 <div class="container">
     <div class="row">
-        <div class="col">
-            <img src="~/img/material_de_escalada.jpg" class="img-fluid" max-width: 100%;height: auto;>
+        <div class="text-center">
+            <h5>Determina los elementos que pueden usarse para escalar un risco basado en las propiedades calóricas y peso de cada elemento.</h5>
         </div>
-
+        
+    </div>
+    <div class="row">
+        <br />
+        <br />
+    </div>
+    <div class="row">
         <div class="col">
             @model Tuple<int, int, List<Elemento>>
 
             <p>Ingresa el mínimo de calorías y peso máximo</p>
-
+            <br />
             <form method="post">
                 <div class="mb-3">
                     <label for="minCalorias" class="form-label">Mínimo de calorías:</label>
@@ -31,38 +34,73 @@
             </form>
 
         </div>
+        <div class="col">
+            <img src="~/img/material_de_escalada.jpg" class="img-fluid" style="max-width:80%" height: auto;>
+        </div>
     </div>
 </div>
 
-@if (Model != null)
-{
-    <p>Mínimo de calorías: @Model.Item1</p>
-    <p>Peso máximo: @Model.Item2</p>
+<div class="container">
+    <div class="row">
+        <br />
+        <br />
+        <br />
+    </div>
+    <div class="row">
+        @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+        {
+            <div class="alert alert-danger" role="alert">
+                @ViewBag.ErrorMessage
+            </div>
+        }
+        @if (Model != null)
+        {
+            
+            <div class="row">
+                <br />
+                <br />
+            </div>
+            <div class="text-center">
+                <h6>Conjunto Óptimo de Elementos</h6>
+                <br />
+            </div>
+            <div class=" alert alert-light" role="alert">
+                <div class="row">
+                    <div class="row">
+                        <p>Mínimo de calorías: @Model.Item1</p>
+                    </div>
+                    <div class="row">
+                        <p>Peso máximo: @Model.Item2</p>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-bordered custom-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Peso</th>
+                        <th>Calorías</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var elemento in Model.Item3)
+                    {
+                        <tr>
+                            <td>@elemento.Nombre</td>
+                            <td>@elemento.Peso</td>
+                            <td>@elemento.Calorias</td>
+                            <td><img src="@elemento.RutaImagen" alt="@elemento.Nombre" class="img-thumbnail" style="max-width:15%"  /></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            
+        }
+       
 
-    <!-- Mostrar los elementos óptimos aquí -->
-    <h1>Conjunto Óptimo de Elementos</h1>
-
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Peso</th>
-                <th>Calorías</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var elemento in Model.Item3)
-            {
-                <tr>
-                    <td>@elemento.Nombre</td>
-                    <td>@elemento.Peso</td>
-                    <td>@elemento.Calorias</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
-
+    </div>
+</div>
 
 
 
