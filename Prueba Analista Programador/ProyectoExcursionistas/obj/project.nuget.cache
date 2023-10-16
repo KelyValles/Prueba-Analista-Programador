@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gfAvRqPYfw7GhDuN75vpaznFaE6xoYc5TRAsVZA2+AjD02/quw/whyr7yVAOnWvKB55TD0m6EbEZZO3sdlAF6g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kely_\\Projects\\Prueba Analista Programador\\ProyectoExcursionistas\\ProyectoExcursionistas.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kely_\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.4\\microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512"
+  ],
+  "logs": []
+}
