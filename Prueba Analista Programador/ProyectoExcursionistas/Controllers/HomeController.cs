@@ -1,6 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ProyectoExcursionistas.Models;
-using System.Diagnostics;
 
 namespace ProyectoExcursionistas.Controllers
 {
@@ -12,6 +10,9 @@ namespace ProyectoExcursionistas.Controllers
             return View();
         }
 
+        /// <summary>
+        ///    Returns a set of optimal elements
+        /// </summary>
         [HttpPost]
         public IActionResult Index(int minCalorias, int maxPeso)
         {
@@ -25,19 +26,11 @@ namespace ProyectoExcursionistas.Controllers
             return View(new Tuple<int, int, List<Elemento>>(minCalorias, maxPeso, conjuntoOptimo));
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
 
 
-
+        /// <list>
+        ///    Contains a list of integers.
+        /// <list>
         private List<Elemento> elementos = new()
         {
             new Elemento { Nombre = "Pies de gato", Peso = 2, Calorias = 3, RutaImagen = "/img/Pies_de_gato.jpg"},
@@ -52,8 +45,9 @@ namespace ProyectoExcursionistas.Controllers
             new Elemento { Nombre = "Guantes", Peso = 7, Calorias = 9, RutaImagen = "/img/guantes.jpg" }
         };
 
-
-
+        /// <summary>
+        ///    method to find optimal set of elements
+        /// </summary>
         private List<Elemento> EncontrarConjuntoOptimo(int minCalorias, int maxPeso)
         {
             int elementosDisponibles = elementos.Count;
@@ -74,7 +68,9 @@ namespace ProyectoExcursionistas.Controllers
                 }
             }
 
-            // Encontrar el valor máximo de calorías que cumple con el mínimo requerido.
+            /// <summary>
+            ///    Find the maximum calorie value that meets the minimum required
+            /// </summary>
             int maxCalorias = resultadosSeleccion[elementosDisponibles, maxPeso];
             if (maxCalorias < minCalorias)
             {
