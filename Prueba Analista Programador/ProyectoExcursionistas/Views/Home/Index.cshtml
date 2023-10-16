@@ -4,5 +4,66 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Determinar los elementos que pueden usarse para escalar un risco basado en las propiedades calóricas y peso de cada elemento.</p>
 </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <img src="~/img/material_de_escalada.jpg" class="img-fluid" max-width: 100%;height: auto;>
+        </div>
+
+        <div class="col">
+            @model Tuple<int, int, List<Elemento>>
+
+            <p>Ingresa el mínimo de calorías y peso máximo</p>
+
+            <form method="post">
+                <div class="mb-3">
+                    <label for="minCalorias" class="form-label">Mínimo de calorías:</label>
+                    <input type="number" id="minCalorias" name="minCalorias" required>
+                </div>
+                <div class="mb-3">
+                    <label for="maxPeso" class="form-label">Peso máximo:</label>
+                    <input type="number" id="maxPeso" name="maxPeso" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Calcular</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+@if (Model != null)
+{
+    <p>Mínimo de calorías: @Model.Item1</p>
+    <p>Peso máximo: @Model.Item2</p>
+
+    <!-- Mostrar los elementos óptimos aquí -->
+    <h1>Conjunto Óptimo de Elementos</h1>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Peso</th>
+                <th>Calorías</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var elemento in Model.Item3)
+            {
+                <tr>
+                    <td>@elemento.Nombre</td>
+                    <td>@elemento.Peso</td>
+                    <td>@elemento.Calorias</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+
+
+
