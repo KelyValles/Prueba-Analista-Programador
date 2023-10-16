@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoExcursionistas", "ProyectoExcursionistas.csproj", "{C137FFB8-C71A-4719-B16E-22691A9C3623}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProyectoExcursionistas", "ProyectoExcursionistas.csproj", "{C137FFB8-C71A-4719-B16E-22691A9C3623}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProjectExcursionistas", "..\TestProjectExcursionistas\TestProjectExcursionistas.csproj", "{F5AC00C1-3956-40A2-95F5-05FC0C60FE7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C137FFB8-C71A-4719-B16E-22691A9C3623}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C137FFB8-C71A-4719-B16E-22691A9C3623}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C137FFB8-C71A-4719-B16E-22691A9C3623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5AC00C1-3956-40A2-95F5-05FC0C60FE7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5AC00C1-3956-40A2-95F5-05FC0C60FE7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5AC00C1-3956-40A2-95F5-05FC0C60FE7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5AC00C1-3956-40A2-95F5-05FC0C60FE7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -48,7 +48,7 @@ namespace ProyectoExcursionistas.Controllers
         /// <summary>
         ///    method to find optimal set of elements
         /// </summary>
-        private List<Elemento> EncontrarConjuntoOptimo(int minCalorias, int maxPeso)
+        public List<Elemento> EncontrarConjuntoOptimo(int minCalorias, int maxPeso)
         {
             int elementosDisponibles = elementos.Count;
             int[,] resultadosSeleccion = new int[elementosDisponibles + 1, maxPeso + 1];
