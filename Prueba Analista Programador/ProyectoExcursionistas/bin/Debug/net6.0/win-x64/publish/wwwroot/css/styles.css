@@ -1,0 +1,8 @@
+﻿/* styles.css */
+
+.custom-table th,
+.custom-table td {
+    width: 25%; 
+    text-align: center; 
+    vertical-align: middle;
+}
