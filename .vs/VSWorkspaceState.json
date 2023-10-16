@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Prueba Analista Programador",
+    "\\Prueba Analista Programador\\ProyectoExcursionistas",
+    "\\Prueba Analista Programador\\ProyectoExcursionistas\\Models",
+    "\\Prueba Analista Programador\\ProyectoExcursionistas\\Properties",
+    "\\Prueba Analista Programador\\ProyectoExcursionistas\\Views\\Home",
+    "\\Prueba Analista Programador\\ProyectoExcursionistas\\Views\\Shared"
   ],
-  "SelectedNode": "\\C:\\Users\\kely_\\Projects",
+  "SelectedNode": "\\Prueba Analista Programador\\ProyectoExcursionistas\\ProyectoExcursionistas.sln",
   "PreviewInSolutionExplorer": false
 }

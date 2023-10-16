@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\kely_\Projects\Prueba Analista Programador\ProyectoExcursionistas
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/kely_/Projects/Prueba Analista Programador/ProyectoExcursionistas/Views/Home/EncontrarConjuntoOptimo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFbmNvbnRyYXJDb25qdW50b09wdGltby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/kely_/Projects/Prueba Analista Programador/ProyectoExcursionistas/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
