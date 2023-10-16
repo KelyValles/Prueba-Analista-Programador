@@ -28,3 +28,9 @@ C:\Users\kely_\Projects\Prueba Analista Programador\ProyectoExcursionistas\obj\D
 C:\Users\kely_\Projects\Prueba Analista Programador\ProyectoExcursionistas\obj\Debug\net6.0\ProyectoExcursionistas.pdb
 C:\Users\kely_\Projects\Prueba Analista Programador\ProyectoExcursionistas\obj\Debug\net6.0\ProyectoExcursionistas.genruntimeconfig.cache
 C:\Users\kely_\Projects\Prueba Analista Programador\ProyectoExcursionistas\obj\Debug\net6.0\ref\ProyectoExcursionistas.dll
+C:\Users\kely_\Projects\Prueba Analista Programador\ProyectoExcursionistas\bin\Debug\net6.0\xunit.abstractions.dll
+C:\Users\kely_\Projects\Prueba Analista Programador\ProyectoExcursionistas\bin\Debug\net6.0\xunit.assert.dll
+C:\Users\kely_\Projects\Prueba Analista Programador\ProyectoExcursionistas\bin\Debug\net6.0\xunit.core.dll
+C:\Users\kely_\Projects\Prueba Analista Programador\ProyectoExcursionistas\bin\Debug\net6.0\xunit.execution.dotnet.dll
+C:\Users\kely_\Projects\Prueba Analista Programador\ProyectoExcursionistas\obj\Debug\net6.0\ProyectoExcursionistas.csproj.AssemblyReference.cache
+C:\Users\kely_\Projects\Prueba Analista Programador\ProyectoExcursionistas\obj\Debug\net6.0\ProyectoExcursionistas.csproj.CopyComplete
